@@ -7,9 +7,10 @@ app = Flask(__name__)
 CORS(app)
 
 # ---------------- LOAD MODEL ----------------
-model = joblib.load("model/crime_model.pkl")
-le_city = joblib.load("model/le_city.pkl")
-le_crime = joblib.load("model/le_crime.pkl")
+model = joblib.load("crime_model.pkl")
+le_city = joblib.load("le_city.pkl")
+le_crime = joblib.load("le_crime.pkl")
+
 
 # ---------------- LOAD DATA ----------------
 df = pd.read_csv("data/CrimesOnWomenData.csv")
@@ -76,3 +77,4 @@ def ranking():
 # ---------------- RUN ----------------
 if __name__ == "__main__":
     app.run(debug=True)
+
