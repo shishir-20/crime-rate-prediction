@@ -1,4 +1,4 @@
-const BACKEND_URL = "http://127.0.0.1:5000/api";
+const BACKEND_URL = "https://crime-rate-prediction-2.onrender.com/api";
 
 async function loadMeta() {
   const res = await fetch(`${BACKEND_URL}/meta`);
@@ -40,3 +40,4 @@ async function loadRanking() {
 }
 
 loadMeta();
+
