@@ -13,7 +13,7 @@ le_crime = joblib.load("le_crime.pkl")
 
 
 # ---------------- LOAD DATA ----------------
-df = pd.read_csv("data/CrimesOnWomenData.csv")
+df = pd.read_csv("CrimesOnWomenData.csv")
 df = df.drop(columns=["Unnamed: 0"])
 
 crime_types = ["Rape", "Theft", "Assault", "Robbery", "Fraud"]
@@ -77,4 +77,5 @@ def ranking():
 # ---------------- RUN ----------------
 if __name__ == "__main__":
     app.run(debug=True)
+
 
