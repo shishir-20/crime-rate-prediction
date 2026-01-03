@@ -1,0 +1,104 @@
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+
+    /* Crime investigation background */
+    background:
+        linear-gradient(
+            rgba(5, 15, 30, 0.88),
+            rgba(5, 15, 30, 0.88)
+        ),
+        url("bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    background: rgba(255, 255, 255, 0.97);
+    padding: 30px 35px;
+    border-radius: 12px;
+    width: 420px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1e3c72;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #1e3c72;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #16305a;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f2f6ff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.back-btn {
+    background-color: #444;
+    margin-top: 15px;
+}
+
+.back-btn:hover {
+    background-color: #222;
+}
+
+/* Title enhancement */
+.title {
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+/* Subtitle below title */
+.subtitle {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-top: 6px;
+    margin-bottom: 18px;
+}
+
+/* Divider line */
+.divider {
+    border: none;
+    height: 1px;
+    background: #e2e2e2;
+    margin-bottom: 22px;
+}

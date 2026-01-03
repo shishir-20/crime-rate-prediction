@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crime Rankings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Crime Rankings (State-wise)</h2>
+
+  <label>Crime Type</label>
+  <select id="crime"></select>
+
+  <label>Year</label>
+  <select id="year"></select>
+
+  <button onclick="loadRanking()">Show Rankings</button>
+
+  <div id="table"></div>
+
+  <a href="home.html">
+    <button class="back-btn">⬅ Back to Home</button>
+  </a>
+</div>
+
+<script src="ranking.js"></script>
+</body>
+</html>
