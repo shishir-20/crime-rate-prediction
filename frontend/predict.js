@@ -24,7 +24,7 @@ async function predictCrime() {
     city: city.value,
     year: year.value,
     crime_type: crime.value
-  };
+  }; 
 
   const res = await fetch(`${BACKEND_URL}/predict`, {
     method: "POST",
